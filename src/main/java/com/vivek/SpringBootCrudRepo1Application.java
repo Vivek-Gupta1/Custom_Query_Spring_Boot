@@ -56,18 +56,26 @@ public class SpringBootCrudRepo1Application {
 //		List<Student> list = bean.getAllStudent();
 //		for(Student sts:list) {
 //			System.out.println(sts);
-//			
+//	===================================================================================		
 //		}
-		List<Student> list2 = bean.getOrderBySName();
-		for(Student std:list2) {
-			System.out.println(std);
-		}
-		List<Student> list = bean.getSalGreaterThan();
-		for(Student st:list) {
-			System.out.println(st);
-		}
-		
-		
+//		List<Student> list2 = bean.getOrderBySName();
+//		for(Student std:list2) {
+//			System.out.println(std);
+//		}
+//		List<Student> list = bean.getSalGreaterThan();
+//		for(Student st:list) {
+//			System.out.println(st);
+//		}
+//	?==============================================================================	
+//		 List<Student> all = bean.getAll();
+//		 for(Student st:all) {
+//			 System.out.println(st);
+//		 }
+		 
+		 List<Student> desc = bean.getByNameDesc();
+		 for(Student st: desc) {
+			 System.out.println(st);
+		 }
 	}
 
 }
