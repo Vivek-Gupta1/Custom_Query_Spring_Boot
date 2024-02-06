@@ -62,6 +62,10 @@ public class SpringBootCrudRepo1Application {
 		for(Student std:list2) {
 			System.out.println(std);
 		}
+		List<Student> list = bean.getSalGreaterThan();
+		for(Student st:list) {
+			System.out.println(st);
+		}
 		
 		
 	}
